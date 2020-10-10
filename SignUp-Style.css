@@ -1,0 +1,9 @@
+:first-child .col
+{
+    margin-top: 7%;
+    margin-left: 10%;
+}
+.SignUpDiv
+{
+    display: none;
+}

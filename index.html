@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>login/signUp</title>
+		<link rel="stylesheet" href="SignUp-Style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/2219ed0af0.js" crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+          <script src="need-validation.js"></script>
+          <script src="onClick.js"></script>
+    </head>
+    <body>
+        <div class="continer">
+            <div class="row">
+                <div class="col">
+                    <img src="3509388@2x.png">
+                </div>
+                <div id="SignUpDiv" class="col " style="display: none;">
+                    <h3 class="text-primary">Getting started</h3>
+                    <p class="text-info">Create an account to continue</p>
+                    <form class="needs-validation">
+                        <div class=" form-group">
+                            <label for="uname" class="text-secondary ">Your name</label>
+                            <input type="text" class=" w-50 form-control " id="uname" name="uname" required>         
+                            </div>
+                            <div>
+                                <label for="email" class="text-secondary ">E-mail</label>
+                                <input type="email" class="w-50 form-control" id="email"  name="email" required>
+                                <div class="valid-feedback">Valid.</div>
+                            </div>   
+                            <div> 
+                                <label for="pwd" class="text-secondary ">Password</label>
+                                <input type="password" class="w-50 form-control" id="pwd"  name="pwd" required>
+                                <div class="valid-feedback">Valid.</div>
+                            </div>
+                                <label for="conpwd" class="text-secondary ">Confirm Password</label>
+                                <input type="password" class="w-50 form-control" id="conpwd"  name="conpwd" required>
+                                <div class="valid-feedback">Valid.</div>
+                            <div>
+                                <label for="phoneNum" class="text-secondary ">Phone</label>
+                                <input type="tel" class="w-50 form-control" id="phoneNum" placeholder="07 0000 0000"  name="phoneNum" pattern="[0-9]{2} [0-9]{4} [0-9]{4}" required>
+                                <div class="valid-feedback">Valid.</div>
+                            </div>
+                                <div>
+                                <label for="id" class="text-secondary ">Upload Personal Identity</label>
+                                <input type="file" class="mt-1" id="id"  name="id" required>
+                                <div class="valid-feedback">Valid.</div>
+                         </div>
+                                <button type="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </form> 
+
+                        <div id="LogInDiv" class="col">
+                            <h3 class="text-primary">Getting started</h3>
+                        <form class="need-validation">
+                            <div class="form-group">
+                                <div>
+                                <label for="email" class="text-secondary ">E-mail</label>
+                                <input type="email" class="w-50 form-control" id="email"  name="email" required>
+                                <div class="valid-feedback">Valid.</div>
+                                </div>
+
+                                <div> 
+                                    <label for="pwd" class="text-secondary ">Password</label>
+                                    <input type="password" class="w-50 form-control" id="pwd"  name="pwd" required>
+                                    <a class="mt-1 text-info stretched-link">Forget password!</a>
+                                    <div class="valid-feedback">Valid.</div>
+                                </div>
+                                <button type="submit" class="mt-2 btn btn-primary">Log In</button>
+                                <p class="text-secondary">You don't have an account<a class="stretched-link text-info" onclick="switchVisible();"> Sign up</a></p>
+
+                                </div>
+                            </form>
+                            </div>
+                    </div>
+            </div>
+            </div>
+
+
+        
+    </body>
+    </html>
